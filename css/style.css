@@ -1,32 +1,29 @@
+:root{
+    --bg-color-dark: black;
+    --txt-color-dark: white;
+    --bg-color-brightness: white;
+    --txt-color-brightness: black;
+}
+body.dark{
+    background-color: var(--bg-color-dark);
+    color: var(--txt-color-dark);
+    transition: 0.5s;
+}
 body{
-    background-color: grey;
+    background-color: var(--bg-color-brightness);
+    color: var(--txt-color-brightness);
+    transition: 0.5s;
 }
 #btn{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    margin: 45vh;
-}
-.claro{
-    color: black;
-    background-color: aliceblue;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    border-style: hidden;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    margin-right: 10px;
+    margin: 40vh;
 }
-.claro:hover{
-    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.7);
-}
-.escuro{
-    color: rgb(255, 255, 255);
+.btn1{
     background-color: rgb(0, 0, 0);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,9 +31,8 @@ body{
     border-radius: 100%;
     width: 100px;
     height: 100px;
-    padding: 10px;
-    margin-left: 10px;
+    padding: 30px;
 }
-.escuro:hover{
-    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.7);
+.btn1:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
