@@ -12,4 +12,3 @@ function mudar() {
         icone.classList.add("bi-moon-fill");
     }
 }
-console.log(alternar)
